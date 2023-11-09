@@ -1,0 +1,281 @@
+body {
+  margin: 0px;
+  background: gray;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+header {
+  background: #002f6c;
+  background: linear-gradient(90deg, #01357b, #002a62);
+}
+
+p,a,h1,h2 {
+  margin: 0px;
+  color: white;
+}
+
+/* General */
+a.button {
+  text-decoration: none;
+  cursor: pointer;
+  color: #124970;
+  font-size: 1.3em;
+  white-space: nowrap;
+  border-radius: 10px;
+  background: #51d0ed;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+a.button:hover {
+    box-shadow: 0 0 9px 4px #ffffff inset;
+}
+
+a.button:active {
+  box-shadow: inset 0px 0px 9px 4px #ffffff, inset 0px 0px 11px 1px #000000;
+  background: #00d0ff;
+}
+
+.seg-line {
+  padding-top: 75px;
+  border-top: 1px solid white;
+}
+
+.ico {
+  display: inline-block;
+}
+
+/* Header */
+.nav-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+}
+
+.nav-flex-item {
+  font-size: 1.2em;
+}
+
+.nav-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 190px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.nav-img img {
+  height: 40px;
+}
+
+.nav-link {
+  display: flex;
+  flex-basis: 400px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0px 0.4em;
+}
+
+.nav-link a:hover {
+  background: #255597;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 50px;
+}
+
+.nav-button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9em;
+  white-space: nowrap;
+  border-radius: 10px;
+  background: #255597;
+  padding: 8px 12px;
+  margin: 0px 0.5em;
+}
+
+.nav-button a:hover  {
+  opacity: 0.8;
+}
+
+/* Seg 1 */
+.app-banner {
+  background: #043577;
+  background: linear-gradient(173deg, #0f57b7, #00285e);
+  position: relative;
+}
+
+.app-flex-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.app-banner-svg {
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+}
+
+.app-banner-text{
+  width: 500px;
+  margin-right: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app-banner-text h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.app-banner-text p {
+  font-size: 1.17em;
+  padding-bottom: 1.2em;
+  font-weight: 600;
+}
+
+.app-banner-img{
+  display: flex;
+  align-items: center;
+}
+
+.app-banner-img img{
+  height: 370px;
+  margin: 65px 0px;
+}
+
+/* Seg 2 */
+
+.seg-2-line {
+  margin: 0px;
+  border: none;
+  height: 2px;
+  background: #013187;
+}
+
+.seg-2 {
+  background: #033270;
+  background: linear-gradient(180deg, #04377b, #012c65);
+  padding: 75px 0;
+}
+
+.seg-2-flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 80%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  max-width: 1000px;
+}
+
+.seg-2-item {
+  flex-basis: 250px;
+}
+
+.seg-2-item p {
+  margin-top: 10px;
+}
+
+a.seg-2-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 0.9em;
+}
+
+/* Seg 3 */
+
+.seg-3 {
+  padding-bottom: 75px;
+  background: #012c65;
+}
+
+.seg-3-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+  gap: 0px 30px;
+}
+
+.seg-3-flex-item p {
+  margin: 20px;
+}
+
+/* Seg 4 */
+
+.seg-4-flex-container{
+  max-width: 1000px;
+  width: 80%;
+  margin: auto;
+}
+
+.seg-4-cards {
+  cursor: pointer;
+  background: white;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.seg-4-cards p {
+  color: black;
+  font-weight: bold;
+  display: inline;
+  line-height: 3;
+}
+
+.seg-4-cards h1{
+  text-align:justify;
+  font-size: 2.5ch;
+  color: black;
+}
+
+.seg-4-card-collapse div {
+  display: none;
+}
+
+.seg-4-card-content {
+  font-size: 20px;
+}
+
+
+.seg-4-ico{
+  float: right;
+  margin: 0.1em 10px 0 0;
+  font-size: 20px;
+}
